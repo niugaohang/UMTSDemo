@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "IDViewController.h"
+
 
 @interface ViewController ()
 
@@ -17,6 +19,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    self.title=@"友盟推送";
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(tongzhi:) name:@"TUISONG" object:nil];
+}
+- (void)tongzhi:(NSNotification *)text
+{
+    NSString *urlStr = [text.userInfo valueForKey:@"url"];
+    IDViewController *idVC=[[IDViewController alloc]init];
+    idVC.URL =urlStr;
+    idVC.idtitle=@"梅斯医学";
+    [self.navigationController pushViewController:idVC animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

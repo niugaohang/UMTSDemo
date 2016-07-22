@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C9501B71D41C6BA000B28D6 /* IDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C9501B61D41C6BA000B28D6 /* IDViewController.m */; };
 		7CFC5ED51D41BB3300F1668D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CFC5ED41D41BB3300F1668D /* main.m */; };
 		7CFC5ED81D41BB3300F1668D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CFC5ED71D41BB3300F1668D /* AppDelegate.m */; };
 		7CFC5EDB1D41BB3300F1668D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CFC5EDA1D41BB3300F1668D /* ViewController.m */; };
@@ -14,6 +15,8 @@
 		7CFC5EE01D41BB3300F1668D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CFC5EDF1D41BB3300F1668D /* Assets.xcassets */; };
 		7CFC5EE31D41BB3300F1668D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CFC5EE11D41BB3300F1668D /* LaunchScreen.storyboard */; };
 		7CFC5EEE1D41BB3300F1668D /* UMTSDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CFC5EED1D41BB3300F1668D /* UMTSDemoUITests.m */; };
+		7CFC5EFB1D41BD3A00F1668D /* libUMessage_Sdk_1.3.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CFC5EF91D41BD3A00F1668D /* libUMessage_Sdk_1.3.0.a */; };
+		7CFC5EFD1D41BD8600F1668D /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CFC5EFC1D41BD8600F1668D /* libz.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7C9501B51D41C6BA000B28D6 /* IDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDViewController.h; sourceTree = "<group>"; };
+		7C9501B61D41C6BA000B28D6 /* IDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDViewController.m; sourceTree = "<group>"; };
 		7CFC5ED01D41BB3200F1668D /* UMTSDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UMTSDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CFC5ED41D41BB3300F1668D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7CFC5ED61D41BB3300F1668D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -40,6 +45,9 @@
 		7CFC5EE91D41BB3300F1668D /* UMTSDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UMTSDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CFC5EED1D41BB3300F1668D /* UMTSDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UMTSDemoUITests.m; sourceTree = "<group>"; };
 		7CFC5EEF1D41BB3300F1668D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CFC5EF91D41BD3A00F1668D /* libUMessage_Sdk_1.3.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libUMessage_Sdk_1.3.0.a; sourceTree = "<group>"; };
+		7CFC5EFA1D41BD3A00F1668D /* UMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMessage.h; sourceTree = "<group>"; };
+		7CFC5EFC1D41BD8600F1668D /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +55,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CFC5EFD1D41BD8600F1668D /* libz.tbd in Frameworks */,
+				7CFC5EFB1D41BD3A00F1668D /* libUMessage_Sdk_1.3.0.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +73,7 @@
 		7CFC5EC71D41BB3200F1668D = {
 			isa = PBXGroup;
 			children = (
+				7CFC5EFC1D41BD8600F1668D /* libz.tbd */,
 				7CFC5ED21D41BB3200F1668D /* UMTSDemo */,
 				7CFC5EEC1D41BB3300F1668D /* UMTSDemoUITests */,
 				7CFC5ED11D41BB3200F1668D /* Products */,
@@ -81,10 +92,13 @@
 		7CFC5ED21D41BB3200F1668D /* UMTSDemo */ = {
 			isa = PBXGroup;
 			children = (
+				7CFC5EF81D41BD3A00F1668D /* UMessage_Sdk_1.3.0 */,
 				7CFC5ED61D41BB3300F1668D /* AppDelegate.h */,
 				7CFC5ED71D41BB3300F1668D /* AppDelegate.m */,
 				7CFC5ED91D41BB3300F1668D /* ViewController.h */,
 				7CFC5EDA1D41BB3300F1668D /* ViewController.m */,
+				7C9501B51D41C6BA000B28D6 /* IDViewController.h */,
+				7C9501B61D41C6BA000B28D6 /* IDViewController.m */,
 				7CFC5EDC1D41BB3300F1668D /* Main.storyboard */,
 				7CFC5EDF1D41BB3300F1668D /* Assets.xcassets */,
 				7CFC5EE11D41BB3300F1668D /* LaunchScreen.storyboard */,
@@ -109,6 +123,15 @@
 				7CFC5EEF1D41BB3300F1668D /* Info.plist */,
 			);
 			path = UMTSDemoUITests;
+			sourceTree = "<group>";
+		};
+		7CFC5EF81D41BD3A00F1668D /* UMessage_Sdk_1.3.0 */ = {
+			isa = PBXGroup;
+			children = (
+				7CFC5EF91D41BD3A00F1668D /* libUMessage_Sdk_1.3.0.a */,
+				7CFC5EFA1D41BD3A00F1668D /* UMessage.h */,
+			);
+			path = UMessage_Sdk_1.3.0;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CFC5EDB1D41BB3300F1668D /* ViewController.m in Sources */,
+				7C9501B71D41C6BA000B28D6 /* IDViewController.m in Sources */,
 				7CFC5ED81D41BB3300F1668D /* AppDelegate.m in Sources */,
 				7CFC5ED51D41BB3300F1668D /* main.m in Sources */,
 			);
@@ -341,10 +365,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = UMTSDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cn.medsci.text.UMTSDemo;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/UMTSDemo/UMessage_Sdk_1.3.0",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.medsci.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7bc24f57-5821-42ae-8460-368cb24fa5df";
 			};
 			name = Debug;
 		};
@@ -352,10 +383,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = UMTSDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cn.medsci.text.UMTSDemo;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/UMTSDemo/UMessage_Sdk_1.3.0",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.medsci.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7bc24f57-5821-42ae-8460-368cb24fa5df";
 			};
 			name = Release;
 		};
@@ -364,7 +402,7 @@
 			buildSettings = {
 				INFOPLIST_FILE = UMTSDemoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cn.medsci.text.UMTSDemoUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.medsci.demo.UMTSDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = UMTSDemo;
 			};
@@ -375,7 +413,7 @@
 			buildSettings = {
 				INFOPLIST_FILE = UMTSDemoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cn.medsci.text.UMTSDemoUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.medsci.demo.UMTSDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = UMTSDemo;
 			};
@@ -400,6 +438,7 @@
 				7CFC5EF41D41BB3300F1668D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7CFC5EF51D41BB3300F1668D /* Build configuration list for PBXNativeTarget "UMTSDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -408,6 +447,7 @@
 				7CFC5EF71D41BB3300F1668D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
