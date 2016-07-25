@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7C9501B71D41C6BA000B28D6 /* IDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C9501B61D41C6BA000B28D6 /* IDViewController.m */; };
+		7CED7A841D45BF6100CAA76E /* medsci_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7CED7A831D45BF6100CAA76E /* medsci_sound.mp3 */; };
 		7CFC5ED51D41BB3300F1668D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CFC5ED41D41BB3300F1668D /* main.m */; };
 		7CFC5ED81D41BB3300F1668D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CFC5ED71D41BB3300F1668D /* AppDelegate.m */; };
 		7CFC5EDB1D41BB3300F1668D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CFC5EDA1D41BB3300F1668D /* ViewController.m */; };
@@ -32,6 +33,7 @@
 /* Begin PBXFileReference section */
 		7C9501B51D41C6BA000B28D6 /* IDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDViewController.h; sourceTree = "<group>"; };
 		7C9501B61D41C6BA000B28D6 /* IDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDViewController.m; sourceTree = "<group>"; };
+		7CED7A831D45BF6100CAA76E /* medsci_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = medsci_sound.mp3; sourceTree = "<group>"; };
 		7CFC5ED01D41BB3200F1668D /* UMTSDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UMTSDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CFC5ED41D41BB3300F1668D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7CFC5ED61D41BB3300F1668D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 				7CFC5EF81D41BD3A00F1668D /* UMessage_Sdk_1.3.0 */,
 				7CFC5ED61D41BB3300F1668D /* AppDelegate.h */,
 				7CFC5ED71D41BB3300F1668D /* AppDelegate.m */,
+				7CED7A831D45BF6100CAA76E /* medsci_sound.mp3 */,
 				7CFC5ED91D41BB3300F1668D /* ViewController.h */,
 				7CFC5EDA1D41BB3300F1668D /* ViewController.m */,
 				7C9501B51D41C6BA000B28D6 /* IDViewController.h */,
@@ -183,6 +186,7 @@
 				TargetAttributes = {
 					7CFC5ECF1D41BB3200F1668D = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = UWQPN2RE82;
 					};
 					7CFC5EE81D41BB3300F1668D = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -217,6 +221,7 @@
 				7CFC5EE31D41BB3300F1668D /* LaunchScreen.storyboard in Resources */,
 				7CFC5EE01D41BB3300F1668D /* Assets.xcassets in Resources */,
 				7CFC5EDE1D41BB3300F1668D /* Main.storyboard in Resources */,
+				7CED7A841D45BF6100CAA76E /* medsci_sound.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,7 +378,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/UMTSDemo/UMessage_Sdk_1.3.0",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = cn.medsci.demo;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.medsci.newmedsci;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "7bc24f57-5821-42ae-8460-368cb24fa5df";
 			};
@@ -391,7 +396,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/UMTSDemo/UMessage_Sdk_1.3.0",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = cn.medsci.demo;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.medsci.newmedsci;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "7bc24f57-5821-42ae-8460-368cb24fa5df";
 			};

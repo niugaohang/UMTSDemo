@@ -65,8 +65,6 @@
     //for log
     [UMessage setLogEnabled:YES];
     
-    
-    
     self.window=[[UIWindow alloc]initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor=[UIColor whiteColor];
     [self.window makeKeyAndVisible];
@@ -107,6 +105,10 @@
 
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo
 {
+
+//  播放的声音--- 自定义铃声，把音频文件放到SDK，在友盟推送设置提醒方式为 自定义名字和音频文件名字相同
+//    medsci_sound.mp3
+    
     NSDictionary *content = [userInfo valueForKey:@"aps"];
     NSString *str=[content valueForKey:@"alert"];
     
