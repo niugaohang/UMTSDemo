@@ -186,7 +186,6 @@
 				TargetAttributes = {
 					7CFC5ECF1D41BB3200F1668D = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = UWQPN2RE82;
 					};
 					7CFC5EE81D41BB3300F1668D = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -324,6 +323,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -361,6 +361,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -378,9 +379,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/UMTSDemo/UMessage_Sdk_1.3.0",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = cn.medsci.newmedsci;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.UMTSDemo.text;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "7bc24f57-5821-42ae-8460-368cb24fa5df";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -396,9 +397,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/UMTSDemo/UMessage_Sdk_1.3.0",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = cn.medsci.newmedsci;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.UMTSDemo.text;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "7bc24f57-5821-42ae-8460-368cb24fa5df";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -409,6 +410,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.medsci.demo.UMTSDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_TARGET_NAME = UMTSDemo;
 			};
 			name = Debug;
@@ -420,6 +422,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.medsci.demo.UMTSDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_TARGET_NAME = UMTSDemo;
 			};
 			name = Release;

@@ -72,6 +72,21 @@
     UINavigationController *nav=[[UINavigationController alloc]initWithRootViewController:vc];
     self.window.rootViewController=nav;
 
+    
+    
+    //    友盟推送 app未运行状态的时候 接受推送消息设置
+    NSDictionary* userInfo = [launchOptions objectForKey:UIApplicationLaunchOptionsRemoteNotificationKey];
+    if (userInfo)
+    {
+        NSDictionary *content = [userInfo valueForKey:@"aps"];
+        NSString *str=[content valueForKey:@"alert"];
+        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"温馨提示" message:str delegate:self cancelButtonTitle:@"现在去看!" otherButtonTitles:@"等会再说", nil];
+        _tzStr=userInfo;
+        [alert show];
+        
+    }
+
+    
     return YES;
 }
 /*
@@ -95,7 +110,7 @@
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
 {
     // 1.2.7版本开始不需要用户再手动注册devicetoken，SDK会自动注册
-    //[UMessage registerDeviceToken:deviceToken];
+//    [UMessage registerDeviceToken:deviceToken];
     
     NSLog(@"---%@",[[[[deviceToken description] stringByReplacingOccurrencesOfString: @"<" withString: @""]
                   stringByReplacingOccurrencesOfString: @">" withString: @""]
